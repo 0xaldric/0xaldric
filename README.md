@@ -1,73 +1,68 @@
-# React + TypeScript + Vite
+# Nguyễn Đức Anh · Aldric
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Software Engineer — TypeScript · Python · Node.js · Web3**
 
-Currently, two official plugins are available:
+Product-minded engineer shipping end-to-end — from planning to production.
+Backend and full-stack across TypeScript, Python, and Node.js, with hands-on
+CI/CD, observability, and cloud delivery at startup pace.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Hà Nội, Việt Nam · Open to remote.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Now
 
-## Expanding the ESLint configuration
+- **Senior Software Engineer @ 5Solution** — owning backend and full-stack
+  delivery across a multi-product event-tech platform
+  (5sport · 5bib · 5ticket · 5pix) for race organizers, athletes, and
+  photographers.
+- **Open-source @ [Mojave](https://github.com/1sixtech/mojave)** — Bitcoin / zk
+  infrastructure in Rust. Shipped block signing & verification
+  ([PR #17](https://github.com/1sixtech/mojave/pull/17)) and automatic ethrex
+  upgrade tooling ([PR #20](https://github.com/1sixtech/mojave/pull/20)).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Previously
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Period | Role | Highlights |
+|---|---|---|
+| 12/2024 – 03/2025 | Senior Engineer · Topology Foundation | DRP runtime; CI/CD + tests → 90% coverage; perf instrumentation |
+| 02/2024 – 12/2024 | Head of Engineering · AnyAxis Labs | 50,000+ users · 99.9% uptime · TonPad / AytuDex / Pump.fun-style platform on TON |
+| 04/2023 – 04/2024 | Co-founder · Vector Education | Educational publishing app shipped to iOS & Android |
+| 03/2023 – 01/2024 | Software Engineer · WispSwap Lab | Off-chain infra for a DeFi DEX; 20k users, 1k+ concurrent |
+| 12/2021 – 06/2023 | Software Engineer L3 · Teko Vietnam | Enterprise CRM on FastAPI/Kafka; cut API latency 60%; >95% test coverage |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Stack I reach for
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Area | Tools |
+|---|---|
+| Languages | TypeScript · Python · Solidity · Rust · Go (learning) |
+| Backend | Node.js · NestJS · FastAPI · gRPC · WebSockets |
+| Data & messaging | PostgreSQL · MySQL · Redis · Elasticsearch · Kafka · RabbitMQ |
+| Cloud · CI/CD · observability | Docker · Kubernetes · GitHub Actions · AWS · OpenTelemetry · Prometheus / Grafana |
+| Web3 | EVM · TON / FunC · Sui · Solana · Smart contracts |
+| Practices | Microservices · TDD · code review · incident response · AI-assisted workflows |
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Selected work
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- [**ts-drp**](https://github.com/0xaldric/ts-drp) — TypeScript runtime for
+  decentralized real-time collaboration.
+- [**Mojave**](https://github.com/1sixtech/mojave) — Rust workspace for
+  Bitcoin / zk infrastructure (full node · sequencer · prover · crypto).
+- **AytuDex / TonPad / Pump.fun-style platform** — Web3 systems shipped via
+  AnyAxis Labs on the TON ecosystem.
+- **Vector** ·
+  [iOS](https://apps.apple.com/vn/app/vector/id6450834400) ·
+  [Android](https://play.google.com/store/apps/details?id=com.app.vector) —
+  educational publishing app, co-founded.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Reach me
+
+- **Email** — [anhnd350309@gmail.com](mailto:anhnd350309@gmail.com)
+- **LinkedIn** — [linkedin.com/in/anhnd350309](https://linkedin.com/in/anhnd350309)
+- **X** — [@0xaldric](https://x.com/0xaldric)
+
+---
+
+<sub>This repository also hosts the source for my portfolio site, built with
+Vite + React + Tailwind. Run <code>npm install && npm run dev</code> to spin it
+up locally.</sub>
