@@ -26,7 +26,7 @@ export type SkillGroup = {
 export const profile = {
   name: "Nguyễn Đức Anh",
   alias: "Aldric",
-  title: "Software Engineer · Web3 · TypeScript · Node.js",
+  title: "Software Engineer · TypeScript · Python · Node.js",
   location: "Hà Nội, Việt Nam · Remote",
   email: "anhnd350309@gmail.com",
   github: "https://github.com/0xaldric",

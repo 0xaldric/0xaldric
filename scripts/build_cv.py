@@ -202,7 +202,7 @@ def role_block(role):
 
 PROFILE = {
     "name": "Nguyễn Đức Anh (Aldric)",
-    "title": "Software Engineer · TypeScript · Python · Node.js · Web3",
+    "title": "Software Engineer · TypeScript · Python · Node.js",
     "tagline": "Product-minded engineer shipping end-to-end — from planning to production. Backend and full-stack across TypeScript, Python, and Node.js, with hands-on CI/CD, observability, and cloud delivery at startup pace.",
     "location": "Hà Nội, Việt Nam · Remote",
     "email": "anhnd350309@gmail.com",

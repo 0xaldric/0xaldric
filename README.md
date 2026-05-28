@@ -1,6 +1,6 @@
 # Nguyễn Đức Anh · Aldric
 
-**Software Engineer — TypeScript · Python · Node.js · Web3**
+**Software Engineer — TypeScript · Python · Node.js**
 
 Product-minded engineer shipping end-to-end — from planning to production.
 Backend and full-stack across TypeScript, Python, and Node.js, with hands-on
