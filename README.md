@@ -2,7 +2,7 @@ Hi 👋 I'm Nguyễn Đức Anh (Aldric) — Software Engineer
 
 Product-minded engineer shipping end-to-end — from planning to production.
 
-Hà Nội, Việt Nam · Open to remote.
+Open to remote.
 
 Open source contributions:
 

@@ -1,4 +1,4 @@
-"""Tailored CV PDF — mirrors the website content, fits on 2 pages, Vietnamese-safe."""
+"""Tailored CV PDF — mirrors the website content, fits on 2 pages, Unicode-safe."""
 
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_LEFT
@@ -21,7 +21,7 @@ from reportlab.platypus import (
 
 OUT_PATH = "/Users/anhnd/Documents/mycv/public/CV_Nguyen_Duc_Anh_Aldric_Tailored.pdf"
 
-# Register Vietnamese-capable fonts (Arial on macOS supports full Vietnamese diacritics).
+# Register a Unicode-capable font (Arial on macOS supports full diacritics).
 ARIAL = "/System/Library/Fonts/Supplemental/Arial.ttf"
 ARIAL_BOLD = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
 ARIAL_ITALIC = "/System/Library/Fonts/Supplemental/Arial Italic.ttf"
@@ -204,7 +204,7 @@ PROFILE = {
     "name": "Nguyễn Đức Anh (Aldric)",
     "title": "Software Engineer · TypeScript · Python · Node.js",
     "tagline": "Product-minded engineer shipping end-to-end — from planning to production. Backend and full-stack across TypeScript, Python, and Node.js, with hands-on CI/CD, observability, and cloud delivery at startup pace.",
-    "location": "Hà Nội, Việt Nam · Remote",
+    "location": "Remote",
     "email": "anhnd350309@gmail.com",
     "github": "github.com/0xaldric",
     "linkedin": "linkedin.com/in/anhnd350309",
@@ -222,7 +222,7 @@ EXPERIENCE = [
         "title": "Senior Software Engineer",
         "company": "5Solution",
         "period": "04/2025 — Present",
-        "location": "Remote · Vietnam",
+        "location": "Remote",
         "summary": "Backend and full-stack delivery across a multi-product event-tech platform — 5sport, 5bib, 5ticket, 5pix — used by race organizers, athletes, and photographers.",
         "highlights": [
             "Lead end-to-end delivery for 5sport and 5bib: race registration, bib-to-photo matching, and live leaderboards — partnering with Product and Design from discovery to production.",
@@ -263,7 +263,7 @@ EXPERIENCE = [
         "title": "Head of Engineering",
         "company": "AnyAxis Labs",
         "period": "02/2024 — 12/2024",
-        "location": "Hà Nội · Remote",
+        "location": "Remote",
         "summary": "Led the engineering org behind multiple Web3 products across the TON ecosystem.",
         "highlights": [
             "Led a high-availability backend supporting 50,000+ active users with 99.9% uptime.",
@@ -277,7 +277,7 @@ EXPERIENCE = [
         "title": "Co-founder · Engineering",
         "company": "Vector Education",
         "period": "04/2023 — 04/2024",
-        "location": "Hà Nội",
+        "location": None,
         "highlights": [
             "Built and deployed backend services for Vector — an educational publishing app shipped to iOS and Android; onboarded 400 users.",
         ],
@@ -295,10 +295,10 @@ EXPERIENCE = [
     },
     {
         "title": "Software Engineer L3",
-        "company": "Teko Vietnam",
+        "company": "Teko",
         "period": "12/2021 — 06/2023",
-        "location": "Hà Nội",
-        "summary": "Enterprise CRM and merchant tooling for one of Vietnam's largest retail tech groups.",
+        "location": None,
+        "summary": "Enterprise CRM and merchant tooling for a major retail tech group.",
         "highlights": [
             "Built enterprise CRM apps on FastAPI, ElasticSearch, Redis, MySQL, and Kafka — cut API latency by 60% via targeted caching.",
             "Maintained legacy systems while upgrading the codebase with SOLID principles and design patterns; kept test coverage above 95%.",
@@ -308,9 +308,9 @@ EXPERIENCE = [
     },
     {
         "title": "Software Engineer · Intern",
-        "company": "Teko Vietnam · VNIST",
+        "company": "Teko · VNIST",
         "period": "01/2020 — 11/2021",
-        "location": "Hà Nội",
+        "location": None,
         "highlights": [
             "Built two core microservices on FastAPI / PostgreSQL / Redis (500 users); integrated services to cut VNPAY merchant declaration time by 50%. Prior internship at VNIST.",
         ],
@@ -338,7 +338,7 @@ PROJECTS = [
 ]
 
 EDUCATION = {
-    "school": "Hà Nội University of Science and Technology",
+    "school": "Hanoi University of Science and Technology (HUST)",
     "degree": "B.Sc., Computer Science",
     "period": "09/2017 — 09/2022",
 }

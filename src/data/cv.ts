@@ -27,7 +27,7 @@ export const profile = {
   name: "Nguyễn Đức Anh",
   alias: "Aldric",
   title: "Software Engineer · TypeScript · Python · Node.js",
-  location: "Hà Nội, Việt Nam · Remote",
+  location: "Remote",
   email: "anhnd350309@gmail.com",
   github: "https://github.com/0xaldric",
   linkedin: "https://www.linkedin.com/in/anhnd350309",
@@ -57,7 +57,7 @@ export const experience: Role[] = [
     company: "5Solution",
     title: "Senior Software Engineer",
     period: "04/2025 — Present",
-    location: "Remote · Vietnam",
+    location: "Remote",
     summary:
       "Owning backend and full-stack delivery across a multi-product event-tech platform — 5sport, 5bib, 5ticket, 5pix — used by race organizers, athletes, and photographers.",
     highlights: [
@@ -113,7 +113,7 @@ export const experience: Role[] = [
     company: "AnyAxis Labs",
     title: "Head of Engineering",
     period: "02/2024 — 12/2024",
-    location: "Hà Nội · Remote",
+    location: "Remote",
     summary:
       "Led the engineering org behind multiple Web3 products across the TON ecosystem.",
     highlights: [
@@ -139,7 +139,6 @@ export const experience: Role[] = [
     company: "Vector Education",
     title: "Co-founder · Engineering",
     period: "04/2023 — 04/2024",
-    location: "Hà Nội",
     summary:
       "Co-founded an educational publishing app shipped to iOS and Android.",
     highlights: [
@@ -168,12 +167,11 @@ export const experience: Role[] = [
     stack: ["TypeScript", "Node.js", "PostgreSQL", "Redis"],
   },
   {
-    company: "Teko Vietnam",
+    company: "Teko",
     title: "Software Engineer L3",
     period: "12/2021 — 06/2023",
-    location: "Hà Nội",
     summary:
-      "Enterprise CRM and merchant tooling for one of Vietnam's largest retail tech groups.",
+      "Enterprise CRM and merchant tooling for a major retail tech group.",
     highlights: [
       "Built enterprise CRM applications on FastAPI, ElasticSearch, Redis, MySQL, and Apache Kafka.",
       "Cut API response latency by 60% via targeted caching strategies.",
@@ -183,10 +181,9 @@ export const experience: Role[] = [
     stack: ["Python", "FastAPI", "MySQL", "Redis", "Elasticsearch", "Kafka"],
   },
   {
-    company: "Teko Vietnam",
+    company: "Teko",
     title: "Software Engineer · Intern",
     period: "04/2021 — 11/2021",
-    location: "Hà Nội",
     highlights: [
       "Built two core services in a microservice architecture using FastAPI, PostgreSQL, and Redis caching — serving 500 users.",
       "Integrated multiple core services to cut VNPAY merchant declaration time by 50%.",
@@ -197,7 +194,6 @@ export const experience: Role[] = [
     company: "VNIST",
     title: "Software Engineer · Intern",
     period: "01/2020 — 01/2021",
-    location: "Hà Nội",
     highlights: [
       "First professional engineering role — contributed to internal tooling and security research projects.",
     ],
@@ -304,10 +300,9 @@ export const projects: ProjectItem[] = [
 
 export const education = [
   {
-    school: "Hà Nội University of Science and Technology",
+    school: "Hanoi University of Science and Technology (HUST)",
     degree: "B.Sc., Computer Science",
     period: "09/2017 — 09/2022",
-    location: "Hà Nội, Vietnam",
   },
 ];
 
