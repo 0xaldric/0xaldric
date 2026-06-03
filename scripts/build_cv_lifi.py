@@ -204,17 +204,17 @@ def role_block(role):
 PROFILE = {
     "name": "Nguyễn Đức Anh (Aldric)",
     "title": "Senior Full-Stack Engineer — TypeScript · Node.js · React · Web3",
-    "tagline": "Backend-heavy full-stack engineer with deep Web3 experience. Building provider integrations, DEX/launchpad/NFT systems, and long-running on-chain flows on the exact stack LI.FI runs — Node.js/TypeScript, React + viem/wagmi, MongoDB, Redis, Kubernetes on AWS.",
+    "tagline": "Backend-heavy full-stack engineer with deep Web3 experience. Building DeFi provider integrations, launchpads, and long-running on-chain flows on the stack LI.FI runs — Node.js/TypeScript, React + viem, ethers.js, MongoDB, Redis, Docker/Kubernetes on AWS.",
     "location": "Remote",
     "email": "anhnd350309@gmail.com",
     "github": "github.com/0xaldric",
-    "linkedin": "linkedin.com/in/anhnd350309",
+    "linkedin": "linkedin.com/in/0xaldric",
 }
 
 SUMMARY = (
     "Senior full-stack engineer with 5+ years shipping production backend systems and 3+ years building Web3 products "
     "end to end — DEX routing, launchpads, NFT execution engines, and cross-chain tooling. Comfortable across the "
-    "exact LI.FI stack: TypeScript/Node.js, React with viem/wagmi, MongoDB/Redis, ethers.js, Docker/Kubernetes on AWS. "
+    "core LI.FI stack: TypeScript/Node.js, React with viem, ethers.js, MongoDB/Redis, Docker/Kubernetes on AWS. "
     "Strong instincts around provider integrations, async flows, retries/idempotency, observability, and recovery — "
     "the exact failure modes a Checkout product has to absorb."
 )
@@ -225,15 +225,14 @@ EXPERIENCE = [
         "company": "Independent",
         "period": "05/2025 — Present",
         "location": "Remote",
-        "summary": "Shipping production crypto products end to end across multiple teams — token launchpads, NFT execution engines, DEX and bridge tooling — on TypeScript / Node.js / React / Solidity.",
+        "summary": "Building production crypto products end to end for multiple clients — DeFi swap/bridge aggregation, token launchpads, and on-chain oracles — on TypeScript/Node.js, ethers + viem, and Solidity.",
         "highlights": [
-            "Buy launchpad — full-stack token launch platform on EVM with bonding-curve pricing, anti-bot guards, and partner-configurable rules. React + viem/wagmi on the client; Node.js workers on ethers.js; MongoDB + Redis for sessions, quotes, and idempotent state.",
-            "NFT Strategy (nftstrategy) — automated NFT execution engine on top of Seaport/Reservoir with floor-sweep, strategy backtests, and robust partial-fill recovery. Lifecycle state tracked mempool → confirmation → reorg.",
-            "Provider integration patterns — normalized DEX aggregators, NFT marketplaces, and price oracles behind a single client-facing API; absorbed provider-specific edge cases (rate limits, slippage drift, eventually-consistent quotes).",
-            "Long-running flow hardening — idempotent quote refresh, webhook + reconciliation jobs, retry/backoff with circuit breakers, and on-chain recovery flows for stuck cross-chain transactions.",
-            "Observability stack — structured logs, traces, and per-provider metrics dashboards; alerts wired to incident response.",
+            "BinkOS — a DeFi execution layer that normalizes 10+ swap, bridge, and lending providers (deBridge cross-chain, PancakeSwap, KyberSwap, OKX DEX, Jupiter, Venus) behind one provider-agnostic plugin interface — the same provider-normalization and routing problem a Checkout product solves. TypeScript monorepo on ethers + viem + @solana/web3.js.",
+            "Token launchpad tooling — launch and buy/sell flows on Solana (LetsBonk) and EVM, with on-chain execution via ethers.js, IPFS metadata, and idempotent state — covering the funding-flow edge cases (slippage, retries, partial fills) Checkout has to absorb.",
+            "On-chain oracle — real-time pipeline turning live data into commit-reveal attestations signed with eth-account and verified on-chain, with orphan/recovery handling for long-running, failure-prone rounds.",
+            "Hands-on AMM internals — a DEX on TON (router, pools, LP accounting) plus EVM contracts in Foundry, giving working depth on routing and liquidity behaviour.",
         ],
-        "stack": ["TypeScript", "Node.js", "React", "viem", "wagmi", "ethers.js", "Solidity", "MongoDB", "Redis", "Docker", "AWS"],
+        "stack": ["TypeScript", "Node.js", "ethers.js", "viem", "@solana/web3.js", "Solidity", "TON / FunC", "MySQL", "Redis", "Docker"],
     },
     {
         "title": "Open-source Contributor",
@@ -307,24 +306,24 @@ EXPERIENCE = [
 SKILLS = [
     ("Languages", "TypeScript, Solidity, Rust, Python, Go (learning), SQL"),
     ("Backend", "Node.js, NestJS, Express, FastAPI, microservices, REST, WebSockets"),
-    ("Web3 / on-chain", "viem, wagmi, ethers.js, web3.js, Hardhat, Foundry, EVM, Solidity, TON / FunC, Sui, Solana"),
-    ("Frontend", "React, TypeScript, Tailwind, viem + wagmi for Web3 UI"),
+    ("Web3 / on-chain", "ethers.js, viem, @solana/web3.js, Foundry, Hardhat, EVM, Solidity, TON / FunC, Solana"),
+    ("Frontend", "React, TypeScript, Tailwind, viem for Web3 UI (wagmi familiar)"),
     ("Data & messaging", "MongoDB, PostgreSQL, MySQL, Redis, Elasticsearch, Kafka, RabbitMQ"),
     ("Cloud & DevOps", "Docker, Kubernetes, AWS, CloudFlare, GitHub Actions, GitOps CD, OpenTelemetry, Prometheus / Grafana"),
     ("Integration patterns", "Provider normalization, idempotent quotes, async retries, webhooks, reconciliation, recovery flows, circuit breakers"),
 ]
 
 PROJECTS = [
-    ("Buy launchpad (freelance)",
-     "Full-stack EVM token launch platform with bonding-curve pricing, anti-bot guards, and partner-configurable rules. React + viem/wagmi UI, Node.js + ethers.js workers, MongoDB / Redis state."),
-    ("NFT Strategy · nftstrategy (freelance)",
-     "Automated NFT execution engine on Seaport/Reservoir: floor sweeps, strategy backtests, partial-fill recovery, mempool → reorg lifecycle tracking."),
+    ("BinkOS — DeFi provider-aggregation layer (freelance)",
+     "Normalizes 10+ swap / bridge / lending providers (deBridge, PancakeSwap, KyberSwap, OKX DEX, Jupiter, Venus) behind one plugin interface — the exact provider-normalization + routing thesis LI.FI is built on. TypeScript monorepo on ethers + viem + @solana/web3.js."),
+    ("Token launchpad tooling (freelance)",
+     "Launch and buy/sell flows on Solana (LetsBonk) and EVM — on-chain execution via ethers.js, IPFS metadata, idempotent state. Handles slippage, retries, and partial fills."),
+    ("On-chain oracle (freelance)",
+     "Real-time pipeline producing commit-reveal attestations signed with eth-account and verified on-chain, with orphan/recovery handling for long-running rounds."),
     ("AytuDex / TonPad / Pump.fun-style platform",
      "Web3 systems shipped via AnyAxis Labs: custom DEX routing (50–100% faster), launchpad smart contracts, scalable token issuance with separated read/write/socket layers."),
     ("Mojave · Bitcoin / zk infrastructure",
      "Rust workspace for full-node, sequencer, prover, and cryptographic utilities. Contributed block signing & verification (PR #17) and automatic ethrex upgrade tooling (PR #20). github.com/1sixtech/mojave"),
-    ("ts-drp · Decentralized Realtime Program",
-     "TypeScript runtime for decentralized real-time collaboration — contributed CI/CD, test infrastructure (→ 90% coverage), and performance instrumentation. github.com/0xaldric/ts-drp"),
 ]
 
 EDUCATION = {

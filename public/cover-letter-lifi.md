@@ -16,29 +16,31 @@ strict filter for HR, I'd love the chance to be considered on the work
 itself; I think it stands up.
 
 **On the work.** Checkout's product surface — provider integrations,
-lifecycle state across long-running flows, partner-facing config, and
-the recovery posture all of that needs — is the exact shape of what
-I've been shipping for the last three years:
+routing intelligence, lifecycle state across long-running flows, and the
+recovery posture all of that needs — is the exact shape of what I've been
+shipping:
 
-- **Buy launchpad** (freelance, 2025) — full-stack EVM token launch on
-  React + viem/wagmi + Node.js/ethers.js + MongoDB/Redis. Bonding-curve
-  pricing, anti-bot guards, partner-configurable rules, idempotent
-  quote refresh, webhook reconciliation.
-- **NFT Strategy / nftstrategy** (freelance, 2025) — automated execution
-  engine on Seaport/Reservoir with partial-fill recovery and full
-  mempool → confirmation → reorg lifecycle tracking. The same failure
-  modes a Checkout has to absorb.
+- **BinkOS** (freelance, 2025) — a DeFi execution layer that normalizes
+  10+ swap, bridge, and lending providers (deBridge for cross-chain,
+  plus PancakeSwap, KyberSwap, OKX DEX, Jupiter, Venus) behind a single
+  provider-agnostic plugin interface. This is the same
+  provider-normalization and routing thesis LI.FI is built on — I've
+  already built it once, in TypeScript on ethers + viem.
+- **Token launchpad tooling** (freelance, 2025) — launch and buy/sell
+  flows on Solana (LetsBonk) and EVM, with on-chain execution via
+  ethers.js, IPFS metadata, and idempotent state — the funding-flow edge
+  cases (slippage, retries, partial fills) a Checkout has to absorb.
+- **On-chain oracle** (freelance, 2025) — a real-time pipeline producing
+  commit-reveal attestations signed and verified on-chain, with
+  orphan/recovery handling for long-running, failure-prone rounds.
 - **AytuDex** (Head of Engineering, AnyAxis Labs) — algorithmic routing
-  delivering 50–100% faster execution than peer DEXes on the same pairs.
-  The aggregator routing intelligence story, at a deeper layer.
-- **WispSwap** (DeFi DEX) — designed the off-chain quote + indexer +
-  reconciliation infrastructure for ~20k users; the layer that sits
-  behind any Checkout-style product.
+  delivering 50–100% faster execution than peer DEXes; the routing
+  intelligence story at a deeper layer.
 
 Stack overlap with what LI.FI runs is direct and current:
-**TypeScript / Node.js**, **React + viem/wagmi**, **MongoDB / Redis**,
-**ethers.js**, **Docker / Kubernetes on AWS**, **GitHub Actions / GitOps
-CD**, structured observability. All production, all today.
+**TypeScript / Node.js**, **React + viem**, **ethers.js**,
+**MongoDB / Redis**, **Docker / Kubernetes on AWS**, **GitHub Actions /
+GitOps CD**, structured observability.
 
 I'd be glad to do a take-home or technical screen at your convenience.
 CV attached.
