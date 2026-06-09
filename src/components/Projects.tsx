@@ -64,9 +64,7 @@ export function Projects() {
                 <li key={e.school}>
                   <p className="text-sm font-medium text-zinc-100">{e.school}</p>
                   <p className="text-sm text-zinc-400">{e.degree}</p>
-                  <p className="font-mono text-xs text-zinc-500">
-                    {e.period} · {e.location}
-                  </p>
+                  <p className="font-mono text-xs text-zinc-500">{e.period}</p>
                 </li>
               ))}
             </ul>
