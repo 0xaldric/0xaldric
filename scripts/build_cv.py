@@ -207,7 +207,7 @@ PROFILE = {
     "location": "Remote",
     "email": "anhnd350309@gmail.com",
     "github": "github.com/0xaldric",
-    "linkedin": "linkedin.com/in/anhnd350309",
+    "linkedin": "linkedin.com/in/0xaldric",
 }
 
 SUMMARY = (
@@ -240,8 +240,8 @@ EXPERIENCE = [
         "location": "Remote · Open Source",
         "summary": "Bitcoin / zk infrastructure — Rust workspace for full-node, sequencer, prover, and cryptographic utilities.",
         "highlights": [
-            "Implemented block signing and verification (PR #17) — cryptographic identity guarantees for produced blocks.",
-            "Built automatic ethrex upgrade tooling (PR #20) — keeping the workspace in lockstep with upstream changes.",
+            "Implemented block signing and verification — cryptographic identity guarantees for produced blocks.",
+            "Built automatic ethrex upgrade tooling — keeping the workspace in lockstep with upstream changes.",
             "Worked across a multi-crate Rust workspace covering full node, sequencer, prover, and cryptographic primitives.",
         ],
         "stack": ["Rust", "Cryptography", "ZK", "Bitcoin", "ethrex"],
@@ -330,7 +330,7 @@ PROJECTS = [
     ("ts-drp · Decentralized Realtime Program",
      "TypeScript runtime for decentralized real-time collaboration — contributed CI/CD, test infrastructure (→ 90% coverage), and performance instrumentation. github.com/0xaldric/ts-drp"),
     ("Mojave · Bitcoin / zk infrastructure",
-     "Rust workspace for full-node, sequencer, prover, and cryptographic utilities. Contributed block signing & verification (PR #17) and automatic ethrex upgrade tooling (PR #20). github.com/1sixtech/mojave"),
+     "Rust workspace for full-node, sequencer, prover, and cryptographic utilities. github.com/1sixtech/mojave"),
     ("AytuDex / TonPad / Pump.fun-style platform",
      "Web3 systems: custom DEX routing (50–100% faster), TON launchpad smart contracts, scalable token issuance with separated read/write/socket layers."),
     ("FastAPI & Telegram Bot boilerplates",
@@ -344,8 +344,6 @@ EDUCATION = {
 }
 
 ACHIEVEMENTS = [
-    'UAVS Hackatrix — Top 7, "Application for job management and salary payment" (07/2021)',
-    "KPMG Challenge — solutions to help businesses overcome pandemic impact",
     "HackerRank — Problem-Solving Certificate",
 ]
 

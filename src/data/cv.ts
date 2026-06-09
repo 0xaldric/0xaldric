@@ -30,7 +30,7 @@ export const profile = {
   location: "Remote",
   email: "anhnd350309@gmail.com",
   github: "https://github.com/0xaldric",
-  linkedin: "https://www.linkedin.com/in/anhnd350309",
+  linkedin: "https://www.linkedin.com/in/0xaldric",
   twitter: "https://x.com/0xaldric",
   resume: "/CV_Nguyen_Duc_Anh_Aldric_Tailored.pdf",
   // Tailored bio for product-led, AI-assisted, cloud-native engineering roles.
