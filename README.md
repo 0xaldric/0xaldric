@@ -7,6 +7,7 @@ Open to remote.
 Open source contributions:
 
 - [Mojave](https://github.com/1sixtech/mojave) (⭐11) - Bitcoin / zk infrastructure in Rust. 2 PRs - [Signing and verifying the block](https://github.com/1sixtech/mojave/pull/17) (merged), [automatic ethrex upgrade](https://github.com/1sixtech/mojave/pull/20) (merged)
+- [zora-protocol](https://github.com/ourzora/zora-protocol) - 1 PR - [username + Farcaster fields in socialAccounts](https://github.com/ourzora/zora-protocol/pull/525) (merged)
 - [ts-drp](https://github.com/0xaldric/ts-drp) - Decentralized Realtime Program runtime. Contributed CI/CD, test infrastructure (→ 90% coverage), and performance instrumentation
 
 Selected work:
@@ -18,5 +19,5 @@ Selected work:
 Contact:
 
 - Email - [anhnd350309@gmail.com](mailto:anhnd350309@gmail.com)
-- LinkedIn - [linkedin.com/in/anhnd350309](https://linkedin.com/in/anhnd350309)
+- LinkedIn - [linkedin.com/in/0xaldric](https://www.linkedin.com/in/0xaldric/)
 - X - [@0xaldric](https://x.com/0xaldric)

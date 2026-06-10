@@ -80,21 +80,6 @@ export const experience: Role[] = [
     ],
   },
   {
-    company: "Mojave · 1sixtech",
-    title: "Open-source Contributor",
-    period: "04/2025 — 07/2025",
-    location: "Remote · Open Source",
-    summary:
-      "Bitcoin / zk infrastructure — Rust workspace for full-node, sequencer, prover, and cryptographic utilities.",
-    highlights: [
-      "Implemented block signing and verification (PR #17) — cryptographic identity guarantees for produced blocks.",
-      "Built automatic ethrex upgrade tooling (PR #20) — keeping the workspace in lockstep with upstream changes.",
-      "Worked across a multi-crate Rust workspace covering full node, sequencer, prover, and cryptographic primitives.",
-    ],
-    stack: ["Rust", "Cryptography", "ZK", "Bitcoin", "ethrex"],
-    links: [{ label: "Mojave on GitHub", href: "https://github.com/1sixtech/mojave" }],
-  },
-  {
     company: "Topology Foundation",
     title: "Senior Software Engineer",
     period: "12/2024 — 03/2025",
@@ -258,6 +243,13 @@ export const projects: ProjectItem[] = [
     href: "https://github.com/1sixtech/mojave",
   },
   {
+    name: "Zora Protocol — OSS contribution",
+    description:
+      "Merged upstream PR adding username + Farcaster support to the socialAccounts API.",
+    tags: ["TypeScript", "Open Source"],
+    href: "https://github.com/ourzora/zora-protocol/pull/525",
+  },
+  {
     name: "AytuDex — Algorithmic DEX",
     description:
       "On-chain DEX with custom routing and matching optimizations measured 50–100% faster than peer DEXes on the same pairs.",
@@ -283,18 +275,18 @@ export const projects: ProjectItem[] = [
     href: "https://apps.apple.com/vn/app/vector/id6450834400",
   },
   {
-    name: "FastAPI Boilerplate",
+    name: "NestJS Backend Starter",
     description:
-      "Opinionated FastAPI starter with dependency injection and a test-first layout — easy to extend, easy to test.",
-    tags: ["Python", "FastAPI", "Open Source"],
-    href: "https://github.com/0xaldric",
+      "NestJS + TypeORM + Redis starter — Swagger, Joi-validated config, ethers v6 helpers, Docker + Railway deploy.",
+    tags: ["NestJS", "TypeScript", "Open Source"],
+    href: "https://github.com/0xaldric/template",
   },
   {
-    name: "Telegram Bot Boilerplate",
+    name: "Telegram Bot Starter",
     description:
-      "Modular NestJS Telegram bot scaffold — separate modules, maintainable structure, production-ready.",
-    tags: ["NestJS", "TypeScript", "Open Source"],
-    href: "https://github.com/0xaldric",
+      "Modular NestJS + Telegraf bot scaffold — command modules, inline keyboards, Joi-validated config.",
+    tags: ["NestJS", "TypeScript", "Telegram"],
+    href: "https://github.com/0xaldric/telegram-bot-study",
   },
 ];
 
@@ -307,7 +299,5 @@ export const education = [
 ];
 
 export const achievements = [
-  'UAVS Hackatrix — Top 7, "Application for job management and salary payment" (07/2021)',
-  "KPMG Challenge — solutions to help businesses overcome pandemic impact",
   "HackerRank — Problem-Solving Certificate",
 ];

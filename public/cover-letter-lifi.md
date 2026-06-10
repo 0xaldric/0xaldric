@@ -47,4 +47,4 @@ CV attached.
 
 Best,
 Aldric (Nguyễn Đức Anh)
-github.com/0xaldric · linkedin.com/in/anhnd350309 · anhnd350309@gmail.com
+github.com/0xaldric · linkedin.com/in/0xaldric · anhnd350309@gmail.com

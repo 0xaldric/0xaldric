@@ -19,12 +19,36 @@ from reportlab.platypus import (
     TableStyle,
 )
 
-OUT_PATH = "/Users/anhnd/Documents/mycv/public/CV_Nguyen_Duc_Anh_Aldric_Tailored.pdf"
+import os
 
-# Register a Unicode-capable font (Arial on macOS supports full diacritics).
-ARIAL = "/System/Library/Fonts/Supplemental/Arial.ttf"
-ARIAL_BOLD = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
-ARIAL_ITALIC = "/System/Library/Fonts/Supplemental/Arial Italic.ttf"
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT_PATH = os.path.join(REPO_ROOT, "public", "CV_Nguyen_Duc_Anh_Aldric_Tailored.pdf")
+
+
+def _first_existing(paths):
+    for p in paths:
+        if os.path.exists(p):
+            return p
+    raise FileNotFoundError(f"No usable font found among: {paths}")
+
+
+# Register a Unicode-capable font with full Vietnamese diacritics.
+# Arial on macOS; Liberation Sans (Arial-metric-compatible) on Linux.
+ARIAL = _first_existing([
+    "/System/Library/Fonts/Supplemental/Arial.ttf",
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+])
+ARIAL_BOLD = _first_existing([
+    "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+])
+ARIAL_ITALIC = _first_existing([
+    "/System/Library/Fonts/Supplemental/Arial Italic.ttf",
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf",
+])
 pdfmetrics.registerFont(TTFont("Body", ARIAL))
 pdfmetrics.registerFont(TTFont("Body-Bold", ARIAL_BOLD))
 pdfmetrics.registerFont(TTFont("Body-Italic", ARIAL_ITALIC))
@@ -234,19 +258,6 @@ EXPERIENCE = [
         "stack": ["TypeScript", "NestJS", "Node.js", "PostgreSQL", "Redis", "Kafka", "Kubernetes", "GitHub Actions", "OpenTelemetry"],
     },
     {
-        "title": "Open-source Contributor",
-        "company": "Mojave · 1sixtech",
-        "period": "04/2025 — 07/2025",
-        "location": "Remote · Open Source",
-        "summary": "Bitcoin / zk infrastructure — Rust workspace for full-node, sequencer, prover, and cryptographic utilities.",
-        "highlights": [
-            "Implemented block signing and verification — cryptographic identity guarantees for produced blocks.",
-            "Built automatic ethrex upgrade tooling — keeping the workspace in lockstep with upstream changes.",
-            "Worked across a multi-crate Rust workspace covering full node, sequencer, prover, and cryptographic primitives.",
-        ],
-        "stack": ["Rust", "Cryptography", "ZK", "Bitcoin", "ethrex"],
-    },
-    {
         "title": "Senior Software Engineer",
         "company": "Topology Foundation",
         "period": "12/2024 — 03/2025",
@@ -330,11 +341,13 @@ PROJECTS = [
     ("ts-drp · Decentralized Realtime Program",
      "TypeScript runtime for decentralized real-time collaboration — contributed CI/CD, test infrastructure (→ 90% coverage), and performance instrumentation. github.com/0xaldric/ts-drp"),
     ("Mojave · Bitcoin / zk infrastructure",
-     "Rust workspace for full-node, sequencer, prover, and cryptographic utilities. github.com/1sixtech/mojave"),
+     "Rust workspace for full-node, sequencer, prover, and cryptographic utilities — contributed block signing/verification and ethrex upgrade tooling. github.com/1sixtech/mojave"),
+    ("Zora Protocol — open-source contribution",
+     "Merged upstream PR adding username + Farcaster support to the socialAccounts API. github.com/ourzora/zora-protocol/pull/525"),
     ("AytuDex / TonPad / Pump.fun-style platform",
      "Web3 systems: custom DEX routing (50–100% faster), TON launchpad smart contracts, scalable token issuance with separated read/write/socket layers."),
-    ("FastAPI & Telegram Bot boilerplates",
-     "Open-source Python and NestJS starters — opinionated layouts, dependency injection, test-first structure."),
+    ("NestJS backend & Telegram bot starters",
+     "Open-source TypeScript starters — NestJS/TypeORM/Redis backend template and a Telegraf bot scaffold. github.com/0xaldric/template · github.com/0xaldric/telegram-bot-study"),
 ]
 
 EDUCATION = {
